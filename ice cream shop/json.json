@@ -1,0 +1,58 @@
+{
+    "storeName": "Ice Cream Store",
+    "flavors": [
+      {
+        "name": "Twix or Treat",
+        "description": "Vanilla ice cream with Twix candy pieces and caramel drizzle"
+      },
+      {
+        "name": "Monster Mash",
+        "description": "Mint chocolate chip with crushed cookies"
+      },
+      {
+        "name": "Cookie Monster",
+        "description": "Blue vanilla ice cream with cookie dough and chocolate chip cookies"
+      },
+      {
+        "name": "Rest in Pieces (RIP)",
+        "description": "Chocolate ice cream with brownie bits and fudge swirls"
+      },
+      {
+        "name": "Pumkin Poltergeist",
+        "description": "Pumpkin spice ice cream with graham cracker crumbs"
+      },
+      {
+        "name": "Vampire's blood",
+        "description": "Strawberry ice cream with red velvet cake pieces"
+      },
+      {
+        "name": "Cookies and Scream",
+        "description": "Cookies and cream ice cream with Oreo chunks"
+      },
+      {
+        "name": "Mean Green Wolverine",
+        "description": "Mint chocolate chip with cookies"
+      },
+      {
+        "name": "Zombie Brownie",
+        "description": "Chocolate ice cream and brownies"
+      }
+    ],
+    "additionalOptions": [
+      "mumified = dipped in chocolate",
+      "headless horseman = bowl",
+      "Burried alive = powdered oreos and cookies on top",
+      "J & H = float",
+      "Witches Brew = blended"
+    ],
+    "energyDrinks": [
+      "purple",
+      "orange dream",
+      "white",
+      "original",
+      "green",
+      "mango",
+      "liquid death"
+    ]
+  }
+  

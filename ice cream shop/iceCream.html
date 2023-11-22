@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+</head>
+<body>
+    <h1 id="top"></h1>
+
+    <ul id="flavorList"></ul>
+
+    <ul id="additionalOptions"></ul>
+
+    <h2>Reaper Energy Drinks</h2>
+    <ul id="energyDrinks"></ul>
+
+    <script>
+        // Use the Fetch API to get the data from json.json
+        fetch('json.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("top").textContent = data.storeName;
+
+                var flavorList = document.getElementById("flavorList");
+                data.flavors.forEach(function(flavor) {
+                    var li = document.createElement("li");
+                    li.innerHTML = flavor.name + ' <span class="description">- ' + flavor.description + '</span>';
+                    flavorList.appendChild(li);
+                });
+
+                var additionalOptionsList = document.getElementById("additionalOptions");
+                data.additionalOptions.forEach(function(option) {
+                    var li = document.createElement("li");
+                    li.textContent = option;
+                    additionalOptionsList.appendChild(li);
+                });
+
+                var energyDrinksList = document.getElementById("energyDrinks");
+                data.energyDrinks.forEach(function(drink) {
+                    var li = document.createElement("li");
+                    li.textContent = drink;
+                    energyDrinksList.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching the JSON:', error);
+            });
+    </script>
+</body>
+</html>

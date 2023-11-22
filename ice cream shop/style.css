@@ -1,0 +1,55 @@
+/* General body styling */
+body {
+    font-family: 'Creepster', cursive, Arial, sans-serif; /* Halloween-style font */
+    background-color: #1a1a1a; /* Dark background for Halloween */
+    color: #ff4500; /* Orange text color for the spooky feel */
+    margin: 0;
+    padding: 20px;
+    background-image: url('halloween-background.png'); /* Optional: Add a Halloween-themed background image */
+}
+
+/* Styling for the main heading */
+h1 {
+    color: #ff4500; /* Bright orange color for the heading */
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #000; /* Adding shadow for a spooky effect */
+}
+
+/* Styling for the unordered lists */
+ul {
+    list-style-type: none; /* Keeps bullet points hidden */
+    padding: 0;
+}
+
+/* Styling for list items */
+li {
+    background-color: #282828; /* Darker background for list items */
+    color: #fff; /* White text for contrast */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(255,69,0,0.6); /* Orange shadow for depth */
+}
+
+/* Special styling for the flavor list */
+#flavorList li {
+    color: #ff4500; /* Orange text color */
+    font-weight: bold;
+}
+
+/* Styling for the additional information list */
+ul:nth-of-type(2) li {
+    color: #d2691e; /* Lighter orange color */
+    font-style: italic;
+}
+
+/* Styling for right-aligning descriptions */
+.description {
+    float: right;
+    color: #fff; /* White color for the descriptions */
+    font-style: italic;
+}
+
+/* Optional: Add some Halloween-themed decorations */
+/* Example: bats, pumpkins, or spider webs */
